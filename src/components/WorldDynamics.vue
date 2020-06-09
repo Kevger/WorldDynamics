@@ -1,39 +1,102 @@
 <template>
   <v-row>
-    <v-col cols="10">
-      <canvas id="myChart" ref="myChart"></canvas>
-    </v-col>
-    <v-col cols="2">
-      <v-row dense>
+    <v-col xs="12" sm="12" md="12" lg="2" xl="2">
+      <v-row no-gutters>
         <v-col cols="12">
-          <v-subheader class="pl-0"> Birth rate</v-subheader>
-          <v-slider min="0" max="4" step="0.05" v-model="BRN1Modifier" thumb-label track-color="#616161" thumb-color="#9E9E9E" color="#FFFF"></v-slider>
+          <v-subheader class="pl-0">Birth rate</v-subheader>
+          <v-slider
+            min="0"
+            max="4"
+            step="0.05"
+            v-model="BRN1Modifier"
+            thumb-label
+            track-color="#616161"
+            thumb-color="#9E9E9E"
+            color="#FFFF"
+          ></v-slider>
         </v-col>
         <v-col cols="12">
           <v-subheader class="pl-0">Death rate</v-subheader>
-          <v-slider min="0" max="4" step="0.05" v-model="DRN1Modifier" thumb-label track-color="#616161" thumb-color="#9E9E9E" color="#FFFF"></v-slider>
+          <v-slider
+            min="0"
+            max="4"
+            step="0.05"
+            v-model="DRN1Modifier"
+            thumb-label
+            track-color="#616161"
+            thumb-color="#9E9E9E"
+            color="#FFFF"
+          ></v-slider>
         </v-col>
         <v-col cols="12">
           <v-subheader class="pl-0">Natural ressource usage</v-subheader>
-          <v-slider min="0" max="2" step="0.05" v-model="NRUN1Modifier" thumb-label track-color="#616161" thumb-color="#9E9E9E" color="#FFFF"></v-slider>
+          <v-slider
+            min="0"
+            max="2"
+            step="0.05"
+            v-model="NRUN1Modifier"
+            thumb-label
+            track-color="#616161"
+            thumb-color="#9E9E9E"
+            color="#FFFF"
+          ></v-slider>
         </v-col>
         <v-col cols="12">
           <v-subheader class="pl-0">Capital investment generation</v-subheader>
-          <v-slider min="0" max="5" step="0.05" v-model="CIGN1Modifier" thumb-label track-color="#616161" thumb-color="#9E9E9E" color="#FFFF"></v-slider>
+          <v-slider
+            min="0"
+            max="5"
+            step="0.05"
+            v-model="CIGN1Modifier"
+            thumb-label
+            track-color="#616161"
+            thumb-color="#9E9E9E"
+            color="#FFFF"
+          ></v-slider>
         </v-col>
         <v-col cols="12">
           <v-subheader class="pl-0">Capital investment discard</v-subheader>
-          <v-slider min="0" max="5" step="0.05" v-model="CIDN1Modifier" thumb-label track-color="#616161" thumb-color="#9E9E9E" color="#FFFF"></v-slider>
+          <v-slider
+            min="0"
+            max="5"
+            step="0.05"
+            v-model="CIDN1Modifier"
+            thumb-label
+            track-color="#616161"
+            thumb-color="#9E9E9E"
+            color="#FFFF"
+          ></v-slider>
         </v-col>
         <v-col cols="12">
           <v-subheader class="pl-0">Polution</v-subheader>
-          <v-slider min="0" max="5" step="0.05" v-model="POLN1Modifier" thumb-label track-color="#616161" thumb-color="#9E9E9E" color="#FFFF"></v-slider>
+          <v-slider
+            min="0"
+            max="5"
+            step="0.05"
+            v-model="POLN1Modifier"
+            thumb-label
+            track-color="#616161"
+            thumb-color="#9E9E9E"
+            color="#FFFF"
+          ></v-slider>
         </v-col>
         <v-col cols="12">
           <v-subheader class="pl-0">Food production</v-subheader>
-          <v-slider min="0" max="10" step="0.05" v-model="FC1Modifier" thumb-label track-color="#616161" thumb-color="#9E9E9E" color="#FFFF"></v-slider>
+          <v-slider
+            min="0"
+            max="10"
+            step="0.05"
+            v-model="FC1Modifier"
+            thumb-label
+            track-color="#616161"
+            thumb-color="#9E9E9E"
+            color="#FFFF"
+          ></v-slider>
         </v-col>
       </v-row>
+    </v-col>
+    <v-col xs="12" sm="12" md="12" lg="10" xl="10">
+      <canvas id="myChart" ref="myChart"></canvas>
     </v-col>
   </v-row>
 </template>
@@ -384,6 +447,6 @@ export default {
 
 <style scoped>
 .pl-0 {
-  color: white!important;
+  color: white !important;
 }
 </style>

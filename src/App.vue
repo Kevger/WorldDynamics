@@ -1,8 +1,5 @@
 <template>
   <v-app :style="{ background: $vuetify.theme.themes.dark.background }">
-    <v-app-bar app color="primary" dark>
-      <v-toolbar-title>World politics synthesizer</v-toolbar-title>
-    </v-app-bar>
     <div>
       <v-content>
         <v-container>
@@ -58,7 +55,7 @@
       </v-content>
     </div>
 
-    <v-footer absolute color="primary">
+    <v-footer absolute dark color="primary">
       <v-col class="text-center" cols="12">
         {{ new Date().getFullYear() }} —
         <strong>Future of Making</strong>
