@@ -1,4 +1,5 @@
-class WorldDynamics {
+import TABHL from "./Table";
+export default class WorldDynamics {
   clip(value1, value2, switchTime, t) {
     return t <= switchTime ? value1 : value2;
   }
