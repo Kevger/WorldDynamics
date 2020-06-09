@@ -6,3 +6,6 @@ All values are exactly the same as in the original.
 
 ## Online Demo
 See [interactive online demo](https://worlddynamics.web.app/).
+
+![alt text](Screenshot_1.png "Screenshot of the demo")
+
