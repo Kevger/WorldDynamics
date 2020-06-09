@@ -1,24 +1,8 @@
-# world_dynamics
+# Interactive Version of the World Dynamics model (1971) by Jay Wright Forrester
 
-## Project setup
-```
-npm install
-```
+## About
+Interactive web version of the computer model which was used in the 1971 book "World dynamics" by Jay Wright Forrester.
+All values are exactly the same as in the original.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Online Demo
+See [interactive online demo](https://worlddynamics.web.app/).
